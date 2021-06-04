@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Chris Bay
@@ -18,6 +20,7 @@ import java.util.List;
 public class EventController {
 
     private static List<String> events = new ArrayList<>();
+
 
     @GetMapping
     public String displayAllEvents(Model model) {
